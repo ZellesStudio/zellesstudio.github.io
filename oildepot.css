@@ -1,0 +1,32 @@
+h1 {
+    margin-bottom: 2vw;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 2vw;
+}
+
+#content_wrapper {
+    width: 60vw;
+    margin-left: 20vw;
+    margin-bottom: 5vw;
+}
+
+img {
+    width: 60vw;
+}
+
+@media (max-aspect-ratio: 93/88) {
+    #content_wrapper {
+        width: 90vw;
+        margin-left: 5vw;
+        margin-bottom: 10vw;
+    }
+
+    img {
+        width: 90vw;
+    }
+    
+    
+}

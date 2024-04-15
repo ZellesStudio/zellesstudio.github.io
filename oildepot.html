@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/base.css">
+    <link rel="stylesheet" type="text/css" href="/oildepot.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header_size">
+        <div id="header_logo">
+            <img src="/logo.png" />
+        </div>
+        <div id="open_mobile_nav">
+            <svg viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                onclick="document.getElementById('mobile_nav').style.display = 'flex';">
+                <path
+                    d="M8.5 48V42.6667H56.5V48H8.5ZM8.5 34.6667V29.3333H56.5V34.6667H8.5ZM8.5 21.3333V16H56.5V21.3333H8.5Z"
+                    fill="white" />
+            </svg>
+        </div>
+        <nav>
+            <a href="/">О нас</a>
+            <a href="/products.html">Продукты и услуги</a>
+            <a href="/oildepot.html" class="active_button">Нефтебаза</a>
+            <a href="#">Контакты</a>
+            <a href="#">Поставки</a>
+        </nav>
+        <div id="header_contacts">
+            <span>+7 965 135 4423</span>
+            <span>Techoil@yandex.ru</span>
+        </div>
+    </header>
+    <div id="mobile_nav">
+        <nav>
+            <a href="#">О нас</a>
+            <a href="#">Продукты и услуги</a>
+            <a href="#">Нефтебаза</a>
+            <a href="#">Контакты</a>
+            <a href="#">Поставки</a>
+        </nav>
+    </div>
+    <main>
+        <div id="content_wrapper">
+            <h1>Нефтебаза</h1>
+            <h2>Адрес: г. Тюмень, ул. Семакова, д. 30</h2>
+            <img src="/assets/img/map_1.png"/>
+            <h1>Завод</h1>
+            <h2>Адрес: Старый Тобольский тракт, 5-й километр, 4, корп. 1, Тюмень</h2>
+            <img src="/assets/img/map_2.png"/>
+        </div>
+    </main>
+    <footer>
+        <div class="footer_top">
+            <div class="footer_nav_wrapper">
+                <nav>
+                    <div>«TEСHOIL»</div>
+                    <ul>
+                        <li>> О нас</li>
+                        <li>> FAQ</li>
+                        <li>> Реквизиты</li>
+                        <li>> Вакансии</li>
+                        <li>> Связаться с нами</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <div>Клиентам</div>
+                    <ul>
+                        <li>> Услуги</li>
+                        <li>> ЖД поставки</li>
+                        <li>> Автоналив</li>
+                        <li>> Цены</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <div>Условия пользования</div>
+                    <ul>
+                        <li>> Приложения</li>
+                        <li>> Конфиденциальность</li>
+                        <li>> Партнерская программа</li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- <div class="footer_feedback">
+                <span>Оставьте адрес электронной почты для того, чтобы мы связались с вами</span>
+                <input placeholder="Адрес электронной почты" />
+                <button><span>Отправить</span></button>
+            </div> -->
+        </div>
+        <div class="footer_bottom">
+            <span class="footer_copyright">© 2024, «TEСHOIL» Все права защищены</span>
+            <div class="footer_contacts">
+                <span>+7 965 135 4423</span>
+                <span>Techoil@yandex.ru</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    function registerHideFunction(hidingElement, notHidingElements, element, hideFunction) {
+        hidingElement.addEventListener('click', function () {
+            if (element.getAttribute('data-is-clicked') != '') {
+                hideFunction();
+            }
+
+            else {
+                element.removeAttribute('data-is-clicked');
+            }
+        });
+
+        notHidingElements.forEach(elem => {
+            elem.addEventListener('click', function () {
+                element.setAttribute('data-is-clicked', '');
+            });
+        });
+
+        element.addEventListener('click', function () {
+            element.setAttribute('data-is-clicked', '');
+        });
+    }
+
+    registerHideFunction(document.getElementById('mobile_nav'), [document.getElementById('mobile_nav')], document.querySelector('#mobile_nav nav'), function () {
+        document.getElementById('mobile_nav').style.display = null;
+    });
+</script>
+
+</html>

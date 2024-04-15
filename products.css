@@ -1,0 +1,208 @@
+#content_wrapper {
+    width: 66vw;
+    margin-left: 17vw;
+    margin-bottom: 5vw;
+}
+
+#fuel_selcet_buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#fuel_selcet_buttons button {
+    font-size: 1.2vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 14em;
+    height: 3.3854em;
+    border: 0.1042em solid #23211F;
+    border-radius: 1.0938em;
+    font-weight: 600;
+    color: #23211F;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+#fuel_selcet_buttons button span {
+    font-size: 1.25em;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    height: 6.6667vw;
+    font-size: 1.1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    font-weight: 600;
+    color: #000;
+}
+
+#table_title {
+    box-shadow: 0px 0.15vw 0px 0px #989898;
+}
+
+table td:nth-child(1) {
+    width: 30%;
+}
+
+table td:nth-child(2) {
+    width: 30%;
+}
+
+table td:nth-child(3) {
+    width: 20%;
+    text-align: right;
+}
+
+table td:nth-child(4) {
+    width: 20%;
+    text-align: right;
+}
+
+#delivery {
+    margin-bottom: 6vw;
+}
+
+#delivery_desc {
+    font-size: 1.2vw;
+    color: #000;
+    font-weight: 600;
+    width: 40vw;
+    line-height: 150%;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.7813vw;
+}
+
+form span {
+    color: #000;
+    font-weight: 600;
+    font-size: 1.0938vw;
+    line-height: 300%;
+}
+
+form input {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 20.8333vw;
+    height: 3.3333vw;
+    border: 0.1042vw solid #23211F;
+    border-radius: 1.0938vw;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 1.0938vw;
+    padding-left: 0.7813vw;
+    padding-right: 0.7813vw;
+}
+
+form button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20.8333vw;
+    height: 3.75vw;
+    background: #23211F;
+    border-radius: 1.0938vw;
+    font-size: 1.0938vw;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1.5vw;
+    border: none;
+}
+
+@media (max-aspect-ratio: 93/88) {
+    #content_wrapper {
+        width: 90vw;
+        margin-left: 5vw;
+    }
+
+    #fuel_selcet_buttons {
+        flex-direction: column;
+        gap: 4vw;
+    }
+
+    h1 {
+        font-size: 5.83vw;
+        margin-top: 12vw;
+        margin-bottom: 12vw;
+        font-weight: 900;
+    }
+
+    #fuel_selcet_buttons button {
+        font-size: 3.5vw;
+    }
+
+    table td {
+        height: 15vw;
+        font-size: 3.2vw;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+
+    table td:nth-child(1) {
+        width: 40%;
+    }
+    
+    table td:nth-child(2) {
+        width: 40%;
+    }
+    
+    table td:nth-child(3) {
+        width: 10%;
+    }
+    
+    table td:nth-child(4) {
+        width: 10%;
+    }
+
+    #table_title {
+        box-shadow: 0px 0.15vw 0px 0px #989898;
+    }
+
+
+
+    #delivery_desc {
+        font-size: 3.7vw;
+        width: 80vw;
+    }
+    
+    form div {
+        display: flex;
+        flex-direction: column;
+        margin-top: 3vw;
+    }
+    
+    form span {
+        font-size: 3.5vw;
+    }
+    
+    form input {
+        width: 61vw;
+        height: 10vw;
+        border: 0.31vw solid #23211F;
+        border-radius: 3.2vw;
+        font-size: 3.2vw;
+        padding-left: 2.3439vw;
+        padding-right: 2.3439vw;
+    }
+    
+    form button {
+        width: 61vw;
+        height: 12vw;
+        border-radius: 3.2vw;
+        font-size: 3.2vw;
+        margin-top: 7vw;
+    }
+
+}

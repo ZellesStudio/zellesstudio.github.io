@@ -1,0 +1,399 @@
+header {
+    position: absolute;
+    z-index: 10;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    min-width: 100vw;
+    max-width: 100vw;
+    position: relative;
+}
+
+#main_section {
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+.bg_img {
+    position: absolute;
+    opacity: 0.7;
+}
+
+#main_section_content {
+    flex-grow: 1;
+    display: flex;
+}
+
+#main_section_text_block {
+    width: 60vw;
+    height: 26.1vw;
+    background-color: #fff;
+    border-radius: 1.7vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+#main_section_text_block span {
+    font-weight: 800;
+    font-size: 2.1vw;
+    margin-bottom: 2.1vw;
+    width: 84.3%;
+    text-align: left;
+}
+
+#main_section_text_block span span {
+    color: #74472C;
+}
+
+#main_section_text_block div {
+    font-weight: 600;
+    font-size: 1.25vw;
+    line-height: 150%;
+    width: 84.3%;
+    text-align: left;
+}
+
+.text_div {
+    margin-top: 0.4vw;
+    margin-bottom: 0.4vw;
+}
+
+#car_img {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 23%;
+    width: 41vw;
+    height: 17vw;
+}
+
+#barrels_img {
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 88%;
+    width: 22vw;
+    height: 20.5vw;
+}
+
+#main_section_fetures {
+    height: 9vw;
+    width: 100vw;
+    background-color: #23211F;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around;
+    padding-left: 14vw;
+    padding-right: 14vw; */
+    justify-content: center;
+    gap: 3vw;
+}
+
+.fetaure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 15vw;
+}
+
+.fetaure svg {
+    width: 3.5vw;
+    padding-bottom: 0.4vw;
+}
+
+.fetaure span {
+    font-weight: 600;
+    font-size: 0.9vw;
+    line-height: 1.5vw;
+    color: #fff;
+    text-align: center;
+}
+
+#stats_container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3.3vw;
+    padding-top: 3.3vw;
+    padding-bottom: 3.3vw;
+    position: relative;
+    z-index: 3;
+}
+
+.stat {
+    width: 60vw;
+    height: 31vw;
+    border-radius: 1.6667vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+.stat_num {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #74472C;
+    background-color: #FCF4EC;
+    border-radius: 2.5vw;
+    width: 21vw;
+    height: 21vw;
+}
+
+.stat_num div {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10.4167vw;
+}
+
+.stat_num span {
+    font-weight: 600;
+    font-size: 2.5vw;
+    line-height: 150%;
+}
+
+.stat_text {
+    color: #000;
+    font-weight: 500;
+    font-size: 1.25vw;
+    line-height: 150%;
+    width: 24.2vw;
+    min-height: 21vw;
+}
+
+#stats_img1 {
+    width: 20vw;
+    height: 45.7292vw;
+    top: 5vw;
+}
+
+#stats_img2 {
+    width: 16.25vw;
+    height: 43.3333vw;
+    right: 0;
+    top: 50vw;
+}
+
+@media (min-aspect-ratio: 147/70) {
+    #main_section_text_block {
+        width: 100vh;
+        height: 43.5vh;
+        border-radius: 2.83vh;
+    }
+
+    #main_section_text_block span {
+        font-size: 3.5vh;
+        margin-bottom: 3.5vh;
+    }
+
+    #main_section_text_block div {
+        font-size: 2.1vh;
+    }
+
+    #main_section_text_block .text_div {
+        margin-top: 0.67vh;
+        margin-bottom: 0.67vh;
+    }
+
+    #car_img {
+        left: calc(50% - 47vh);
+        top: calc(50% - 10vh);
+        width: 68.3vh;
+        height: 28.3vh;
+    }
+
+    #barrels_img {
+        left: calc(50% + 60vh);
+        top: calc(50% - 7vh);
+        width: 36.67vh;
+        height: 34.16vh;
+    }
+
+    #main_section_fetures {
+        height: 15vh;
+        padding-left: 23.3vh;
+        padding-right: 23.3vh;
+        gap: 10vh;
+    }
+
+    .fetaure {
+        width: 25vh;
+    }
+
+    .fetaure svg {
+        width: 5.83vh;
+        padding-bottom: 0.66vh;
+    }
+
+    .fetaure span {
+        font-size: 1.5vh;
+        line-height: 2.5vh;
+    }
+
+    #stats_container {
+        gap: 5.5vh;
+        padding-top: 5.5vh;
+        padding-bottom: 5.5vh;
+    }
+
+    .stat {
+        width: 100vh;
+        height: 52vh;
+        border-radius: 2.78vh;
+        padding-left: 6.67vh;
+        padding-right: 6.67vh;
+    }
+
+    .stat_num {
+        border-radius: 4.17vh;
+        width: 35vh;
+        height: 35vh;
+    }
+
+    .stat_num div {
+        font-size: 17.36vh;
+    }
+
+    .stat_num span {
+        font-size: 4.17vh;
+    }
+
+    .stat_text {
+        font-size: 2.1vh;
+        width: 40.3vh;
+        min-height: 35vh;
+    }
+
+    #stats_img1 {
+        width: 33.33vh;
+        height: 76.21vh;
+        top: 8.33vh;
+    }
+
+    #stats_img2 {
+        width: 27.1vh;
+        height: 72.22vh;
+        top: 83.33vh;
+    }
+}
+
+@media (max-aspect-ratio: 93/88) {
+    .bg_img {
+        display: none;
+    }
+
+    #main_section {
+        max-height: none;
+        min-height: 190vh;
+    }
+
+    #main_section_text_block {
+        width: 90vw;
+        height: auto;
+        border-radius: 5.95vw;
+        padding-top: 8vw;
+        padding-bottom: 8vw;
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+    }
+
+    #main_section_text_block span {
+        font-size: 7.35vw;
+        margin-bottom: 7.35vw;
+        width: 84.3%;
+    }
+
+    #main_section_text_block div {
+        font-size: 4.375vw;
+        width: 84.3%;
+    }
+
+    .text_div {
+        margin-top: 1.4vw;
+        margin-bottom: 1.4vw;
+    }
+
+    #main_section_fetures {
+        min-height: 90vh;
+        height: auto;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 0;
+        box-sizing: content-box;
+        padding-top: 5vw;
+        padding-bottom: 5vw;
+    }
+
+    .fetaure {
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        width: 40vw;
+    }
+
+    .fetaure svg {
+        width: 17vw;
+        padding-bottom: 1.4vw;
+    }
+
+    .fetaure span {
+        font-size: 4.5vw;
+        line-height: 150%;
+    }
+
+    #stats_container {
+        width: 100vw;
+        gap: 10vw;
+        padding-top: 10vw;
+        padding-bottom: 10vw;
+    }
+
+    .stat {
+        width: 90vw;
+        height: auto;
+        border-radius: 5.33vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-top: 4vw;
+        padding-bottom: 4vw;
+    }
+
+    .stat_num {
+        border-radius: 8vw;
+        width: 60vw;
+        height: 60vw;
+        order: 0;
+        margin-bottom: 12vw;
+    }
+
+    .stat_num div {
+        font-size: 26vw;
+    }
+
+    .stat_num span {
+        font-size: 6.24vw;
+    }
+
+    .stat_text {
+        font-size: 3.3vw;
+        width: 60vw;
+        min-height: 0;
+        order: 1;
+    }  
+}

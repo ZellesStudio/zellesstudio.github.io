@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/base.css">
+    <link rel="stylesheet" type="text/css" href="/products.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header_size">
+        <div id="header_logo">
+            <img src="/logo.png" />
+        </div>
+        <div id="open_mobile_nav">
+            <svg viewBox="0 0 65 64" fill="none" xmlns="http://www.w3.org/2000/svg"
+                onclick="document.getElementById('mobile_nav').style.display = 'flex';">
+                <path
+                    d="M8.5 48V42.6667H56.5V48H8.5ZM8.5 34.6667V29.3333H56.5V34.6667H8.5ZM8.5 21.3333V16H56.5V21.3333H8.5Z"
+                    fill="white" />
+            </svg>
+        </div>
+        <nav>
+            <a href="/">О нас</a>
+            <a href="/products.html" class="active_button">Продукты и услуги</a>
+            <a href="/oildepot.html">Нефтебаза</a>
+            <a href="#">Контакты</a>
+            <a href="#">Поставки</a>
+        </nav>
+        <div id="header_contacts">
+            <span>+7 965 135 4423</span>
+            <span>Techoil@yandex.ru</span>
+        </div>
+    </header>
+    <div id="mobile_nav">
+        <nav>
+            <a href="#">О нас</a>
+            <a href="#">Продукты и услуги</a>
+            <a href="#">Нефтебаза</a>
+            <a href="#">Контакты</a>
+            <a href="#">Поставки</a>
+        </nav>
+    </div>
+    <main>
+        <div id="content_wrapper">
+            <div id="fuel_select">
+                <h1>Выберите топливо</h1>
+                <div id="fuel_selcet_buttons">
+                    <button><span>Бензин</span></button>
+                    <button><span>Дизель</span></button>
+                    <button><span>Газ</span></button>
+                </div>
+            </div>
+            <div id="fuel_info">
+                <h1>Цены от 09 апреля 2024</h1>
+                <table>
+                    <tbody>
+                        <tr id="table_title">
+                            <td>Базис отгрузки</td>
+                            <td>Название</td>
+                            <td>Стоимость литра (руб.)</td>
+                            <td>Цена за самовывоз (тыс руб.)</td>
+                        </tr>
+                        <tr>
+                            <td>Москва</td>
+                            <td>ДТ-Л-К5</td>
+                            <td>60,0</td>
+                            <td>60,00</td>
+                        </tr>
+                        <tr>
+                            <td>Брянск</td>
+                            <td>ДТ-3-К5</td>
+                            <td>56,0</td>
+                            <td>56,00</td>
+                        </tr>
+                        <tr>
+                            <td>Тюмень</td>
+                            <td>ДТ-Л-К7</td>
+                            <td>55,5</td>
+                            <td>55,00</td>
+                        </tr>
+                        <tr>
+                            <td>Вологда</td>
+                            <td>ДТ-Л-К8</td>
+                            <td>56,4</td>
+                            <td>56,45</td>
+                        </tr>
+                        <tr>
+                            <td>Тверь</td>
+                            <td>ДТ-Л-К9</td>
+                            <td>50,0</td>
+                            <td>50,00</td>
+                        </tr>
+                        <tr>
+                            <td>Уфа</td>
+                            <td>ДТ-Л-Б2</td>
+                            <td>62,0</td>
+                            <td>62,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- <div id="delivery">
+                <h1>Доставка</h1>
+                <div id="delivery_desc">Для того, чтобы узнать цену доставки, заполните небольшую анкету, чтобы мы могли
+                    связаться с вами и рассчитать стоимость доставки персонально для вас:</div>
+                <form>
+                    <div>
+                        <span>Имя</span>
+                        <input/>
+                    </div>
+                    <div>
+                        <span>Телефон</span>
+                        <input placeholder="+7"/>
+                    </div>
+                    <div>
+                        <span>Электронная почта</span>
+                        <input/>
+                    </div>
+                    <button>Отправить</button>
+
+                </form>
+            </div> -->
+        </div>
+    </main>
+    <footer>
+        <div class="footer_top">
+            <div class="footer_nav_wrapper">
+                <nav>
+                    <div>«TEСHOIL»</div>
+                    <ul>
+                        <li>> О нас</li>
+                        <li>> FAQ</li>
+                        <li>> Реквизиты</li>
+                        <li>> Вакансии</li>
+                        <li>> Связаться с нами</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <div>Клиентам</div>
+                    <ul>
+                        <li>> Услуги</li>
+                        <li>> ЖД поставки</li>
+                        <li>> Автоналив</li>
+                        <li>> Цены</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <div>Условия пользования</div>
+                    <ul>
+                        <li>> Приложения</li>
+                        <li>> Конфиденциальность</li>
+                        <li>> Партнерская программа</li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- <div class="footer_feedback">
+                <span>Оставьте адрес электронной почты для того, чтобы мы связались с вами</span>
+                <input placeholder="Адрес электронной почты" />
+                <button><span>Отправить</span></button>
+            </div> -->
+        </div>
+        <div class="footer_bottom">
+            <span class="footer_copyright">© 2024, «TEСHOIL» Все права защищены</span>
+            <div class="footer_contacts">
+                <span>+7 965 135 4423</span>
+                <span>Techoil@yandex.ru</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+<script>
+    function registerHideFunction(hidingElement, notHidingElements, element, hideFunction) {
+        hidingElement.addEventListener('click', function () {
+            if (element.getAttribute('data-is-clicked') != '') {
+                hideFunction();
+            }
+
+            else {
+                element.removeAttribute('data-is-clicked');
+            }
+        });
+
+        notHidingElements.forEach(elem => {
+            elem.addEventListener('click', function () {
+                element.setAttribute('data-is-clicked', '');
+            });
+        });
+
+        element.addEventListener('click', function () {
+            element.setAttribute('data-is-clicked', '');
+        });
+    }
+
+    registerHideFunction(document.getElementById('mobile_nav'), [document.getElementById('mobile_nav')], document.querySelector('#mobile_nav nav'), function () {
+        document.getElementById('mobile_nav').style.display = null;
+    });
+</script>
+
+</html>
