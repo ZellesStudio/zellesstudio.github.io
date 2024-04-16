@@ -45,59 +45,97 @@
     </div>
     <main>
         <div id="content_wrapper">
-            <div id="fuel_select">
-                <h1>Выберите топливо</h1>
-                <div id="fuel_selcet_buttons">
-                    <button><span>Бензин</span></button>
-                    <button><span>Дизель</span></button>
-                    <button><span>Газ</span></button>
+            <div>
+                <h1>Выберите тип доставки</h1>
+                <h2>Примечание: Ж/Д перевозки доступны от 60 тонн для бензина<br />и от 65 тонн для
+                    дизеля.<br /><br />Самовывоз автотранспортом доступен от 5 тонн.</h2>
+                <div class="buttons">
+                    <button onclick="switchTansport('roadTransport')"
+                        class="selected_button" id="select_button_roadTransport"><span>Автотранспорт</span></button>
+                    <button onclick="switchTansport('railwayTransport')" id="select_button_railwayTransport"><span>Ж/Д</span></button>
                 </div>
             </div>
-            <div id="fuel_info">
-                <h1>Цены от 09 апреля 2024</h1>
+            <div id="fuel_select">
+                <h1>Выберите топливо</h1>
+                <div class="buttons">
+                    <button onclick="switchFuel('petrol')" class="selected_button" id="select_button_petrol"><span>Бензин</span></button>
+                    <button onclick="switchFuel('disel')" id="select_button_disel"><span>Дизель</span></button>
+                </div>
+            </div>
+            <div class="fuel_info" id="roadtransport_petrol_section">
+                <h1>Цены от 09 апреля 2024 для самовывоза бензина на автотранспорте</h1>
                 <table>
                     <tbody>
-                        <tr id="table_title">
+                        <tr class="table_title">
                             <td>Базис отгрузки</td>
-                            <td>Название</td>
-                            <td>Стоимость литра (руб.)</td>
-                            <td>Цена за самовывоз (тыс руб.)</td>
+                            <td>Продукт</td>
+                            <td>Стоимость тонны (руб.)</td>
                         </tr>
                         <tr>
-                            <td>Москва</td>
+                            <td>Нефтебаза</td>
+                            <td>АИ-92</td>
+                            <td>По телефону</td>
+                        </tr>
+                        <tr>
+                            <td>Нефтебаза</td>
+                            <td>АИ-95</td>
+                            <td>По телефону</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="fuel_info" id="roadtransport_disel_section" style="display: none;">
+                <h1>Цены от 09 апреля 2024 для самовывоза дизеля на автотранспорте</h1>
+                <table>
+                    <tbody>
+                        <tr class="table_title">
+                            <td>Базис отгрузки</td>
+                            <td>Продукт</td>
+                            <td>Стоимость тонны (руб.)</td>
+                        </tr>
+                        <tr>
+                            <td>Нефтебаза</td>
                             <td>ДТ-Л-К5</td>
-                            <td>60,0</td>
-                            <td>60,00</td>
+                            <td>По телефону</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="fuel_info" id="railwaytransport_petrol_section" style="display: none;">
+                <h1>Цены от 09 апреля 2024 для транспортировки бензина на Ж/Д</h1>
+                <table>
+                    <tbody>
+                        <tr class="table_title">
+                            <td>Базис отгрузки</td>
+                            <td>Продукт</td>
+                            <td>Стоимость тонны (руб.)</td>
                         </tr>
                         <tr>
-                            <td>Брянск</td>
-                            <td>ДТ-3-К5</td>
-                            <td>56,0</td>
-                            <td>56,00</td>
+                            <td>Тюменский НПЗ</td>
+                            <td>АИ-92</td>
+                            <td>По телефону</td>
                         </tr>
                         <tr>
-                            <td>Тюмень</td>
-                            <td>ДТ-Л-К7</td>
-                            <td>55,5</td>
-                            <td>55,00</td>
+                            <td>Тюменский НПЗ</td>
+                            <td>АИ-95</td>
+                            <td>По телефону</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="fuel_info" id="railwaytransport_disel_section" style="display: none;">
+                <h1>Цены от 09 апреля 2024 для транспортировки дизеля на Ж/Д</h1>
+                <table>
+                    <tbody>
+                        <tr class="table_title">
+                            <td>Базис отгрузки</td>
+                            <td>Продукт</td>
+                            <td>Стоимость тонны (руб.)</td>
                         </tr>
                         <tr>
-                            <td>Вологда</td>
-                            <td>ДТ-Л-К8</td>
-                            <td>56,4</td>
-                            <td>56,45</td>
-                        </tr>
-                        <tr>
-                            <td>Тверь</td>
-                            <td>ДТ-Л-К9</td>
-                            <td>50,0</td>
-                            <td>50,00</td>
-                        </tr>
-                        <tr>
-                            <td>Уфа</td>
-                            <td>ДТ-Л-Б2</td>
-                            <td>62,0</td>
-                            <td>62,00</td>
+                            <td>Тюменский НПЗ</td>
+                            <td>ДТ-Л-К5</td>
+                            <td>По телефону</td>
                         </tr>
                     </tbody>
                 </table>
@@ -172,7 +210,7 @@
     </footer>
 
 </body>
-<script>
+<script type="text/javascript" src="/js/products.js">
     function registerHideFunction(hidingElement, notHidingElements, element, hideFunction) {
         hidingElement.addEventListener('click', function () {
             if (element.getAttribute('data-is-clicked') != '') {
@@ -199,5 +237,6 @@
         document.getElementById('mobile_nav').style.display = null;
     });
 </script>
+<script type="text/javascript" src="/js/products.js"></script>
 
 </html>

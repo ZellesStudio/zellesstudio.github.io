@@ -28,7 +28,7 @@ main section {
 
 #main_section_text_block {
     width: 60vw;
-    height: 26.1vw;
+    height: 27vw;
     background-color: #fff;
     border-radius: 1.7vw;
     margin: auto;
@@ -42,7 +42,7 @@ main section {
 #main_section_text_block span {
     font-weight: 800;
     font-size: 2.1vw;
-    margin-bottom: 2.1vw;
+    margin-bottom: 1.2vw;
     width: 84.3%;
     text-align: left;
 }

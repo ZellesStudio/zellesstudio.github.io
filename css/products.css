@@ -4,14 +4,14 @@
     margin-bottom: 5vw;
 }
 
-#fuel_selcet_buttons {
+.buttons {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 60%;
     justify-content: space-between;
 }
 
-#fuel_selcet_buttons button {
+.buttons button {
     font-size: 1.2vw;
     display: flex;
     flex-direction: row;
@@ -25,14 +25,20 @@
     color: #23211F;
     background-color: rgba(0, 0, 0, 0);
     cursor: pointer;
+    transition: 0.3s;
 }
 
-#fuel_selcet_buttons button span {
+.buttons button span {
     font-size: 1.25em;
 }
 
+.selected_button {
+    background-color: #23211F !important;
+    color: #fff !important;
+}
+
 table {
-    width: 100%;
+    width: 80%;
 }
 
 table td {
@@ -44,27 +50,14 @@ table td {
     color: #000;
 }
 
-#table_title {
+.table_title {
     box-shadow: 0px 0.15vw 0px 0px #989898;
 }
 
-table td:nth-child(1) {
-    width: 30%;
-}
-
-table td:nth-child(2) {
-    width: 30%;
-}
-
 table td:nth-child(3) {
-    width: 20%;
     text-align: right;
 }
 
-table td:nth-child(4) {
-    width: 20%;
-    text-align: right;
-}
 
 #delivery {
     margin-bottom: 6vw;
@@ -113,12 +106,17 @@ form button {
     width: 20.8333vw;
     height: 3.75vw;
     background: #23211F;
+    color: #fff;
     border-radius: 1.0938vw;
     font-size: 1.0938vw;
-    color: #fff;
     cursor: pointer;
     margin-top: 1.5vw;
     border: none;
+}
+
+
+.fuel_info {
+    margin-top: 5vw;
 }
 
 @media (max-aspect-ratio: 93/88) {
@@ -127,10 +125,12 @@ form button {
         margin-left: 5vw;
     }
 
-    #fuel_selcet_buttons {
+    .buttons {
         flex-direction: column;
         gap: 4vw;
+        width: 80%;
     }
+    
 
     h1 {
         font-size: 5.83vw;
@@ -139,8 +139,12 @@ form button {
         font-weight: 900;
     }
 
-    #fuel_selcet_buttons button {
+    .buttons button {
         font-size: 3.5vw;
+    }
+
+    table {
+        width: 100%;
     }
 
     table td {
@@ -150,23 +154,7 @@ form button {
         padding-right: 2vw;
     }
 
-    table td:nth-child(1) {
-        width: 40%;
-    }
-    
-    table td:nth-child(2) {
-        width: 40%;
-    }
-    
-    table td:nth-child(3) {
-        width: 10%;
-    }
-    
-    table td:nth-child(4) {
-        width: 10%;
-    }
-
-    #table_title {
+    .table_title {
         box-shadow: 0px 0.15vw 0px 0px #989898;
     }
 
@@ -176,17 +164,17 @@ form button {
         font-size: 3.7vw;
         width: 80vw;
     }
-    
+
     form div {
         display: flex;
         flex-direction: column;
         margin-top: 3vw;
     }
-    
+
     form span {
         font-size: 3.5vw;
     }
-    
+
     form input {
         width: 61vw;
         height: 10vw;
@@ -196,7 +184,7 @@ form button {
         padding-left: 2.3439vw;
         padding-right: 2.3439vw;
     }
-    
+
     form button {
         width: 61vw;
         height: 12vw;
