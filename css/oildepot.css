@@ -17,6 +17,10 @@ img {
     width: 60vw;
 }
 
+.map {
+    width: 60vw;
+}
+
 @media (max-aspect-ratio: 93/88) {
     #content_wrapper {
         width: 90vw;
@@ -28,5 +32,9 @@ img {
         width: 90vw;
     }
     
-    
+    .map {
+        width: 90vw;
+    }
+
+
 }
