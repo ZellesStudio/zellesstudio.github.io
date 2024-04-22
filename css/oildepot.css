@@ -1,40 +1,96 @@
-h1 {
-    margin-bottom: 2vw;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1vw;
+    gap: 3.3333em;
+    padding-top: 3.3333em;
+    padding-bottom: 3.3333em;
 }
 
-h2 {
-    margin-top: 0;
-    margin-bottom: 2vw;
+.info_block {
+    width: 59.9479em;
+    background-color: #fff;
+    padding-top: 3.3333em;
+    padding-bottom: 3.3333em;
+    padding-left: 4.6354em;
+    padding-right: 4.6354em;
+    border-radius: 1.6667em;
 }
 
-#content_wrapper {
-    width: 60vw;
-    margin-left: 20vw;
-    margin-bottom: 5vw;
+.info_block_title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 2.5em;
 }
 
-img {
-    width: 60vw;
+.info_block_title svg {
+    width: 3.3333em;
+    height: 3.3333em;
+    margin-right: 1.6667em;
 }
 
-.map {
-    width: 60vw;
+.info_block_title span {
+    font-weight: 600;
+    font-size: 2.0833em;
+    color: #74472C;
+}
+
+.info_block_text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25em;
+}
+
+.info_block_text div {
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #000000;
+    line-height: 150%;
+}
+
+@media (min-aspect-ratio: 147/70) {
+    main {
+        font-size: 2vh;
+    }
 }
 
 @media (max-aspect-ratio: 93/88) {
-    #content_wrapper {
-        width: 90vw;
-        margin-left: 5vw;
-        margin-bottom: 10vw;
+    main {
+        gap: 8.25em;
+        padding-top: 8.25em;
+        padding-bottom: 8.25em;
     }
 
-    img {
-        width: 90vw;
-    }
-    
-    .map {
-        width: 90vw;
+    .info_block {
+        width: 90em;
+        padding-top: 8.25em;
+        padding-bottom: 8.25em;
+        border-radius: 6em;
+        padding-left: 6.8em;
+        padding-right: 6.8em;
     }
 
+    .info_block_title {
+        padding-bottom: 5.7em;
+    }
 
+    .info_block_title svg {
+        width: 9em;
+        height: 9em;
+        margin-right: 6.75em;
+    }
+
+    .info_block_title span {
+        font-size: 6.75em;
+    }
+
+    .info_block_text {
+        gap: 4.5em;
+    }
+
+    .info_block_text div {
+        font-size: 4.5em;
+    }
 }

@@ -1,6 +1,11 @@
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
 #content_wrapper {
     width: 66vw;
-    margin-left: 17vw;
     margin-bottom: 5vw;
 }
 
@@ -114,9 +119,31 @@ form button {
     border: none;
 }
 
-
 .fuel_info {
     margin-top: 5vw;
+}
+
+@media (min-aspect-ratio: 147/70){
+    #content_wrapper {
+        width: 132vh;
+        margin-bottom: 10vh;
+    }
+
+    .buttons button {
+        font-size: 2.4vh;
+    }
+
+    table td {
+        height: 13.33vh;
+        font-size: 2.2vh;
+        padding-left: 4vh;
+        padding-right: 4vh;
+    }
+
+    .fuel_info {
+        margin-top: 10vh;
+    }
+
 }
 
 @media (max-aspect-ratio: 93/88) {
@@ -131,7 +158,6 @@ form button {
         width: 80%;
     }
     
-
     h1 {
         font-size: 5.83vw;
         margin-top: 12vw;

@@ -26,8 +26,8 @@
             <a href="/" class="active_button">О нас</a>
             <a href="/products.html">Продукты и услуги</a>
             <a href="/oildepot.html">Нефтебаза</a>
-            <a href="#">Контакты</a>
-            <a href="#">Поставки</a>
+            <a href="/contacts.html">Контакты</a>
+            <a href="/oildepot.html">Крупный опт</a>
         </nav>
         <div id="header_contacts">
             <span>+7 965 135 4423</span>
@@ -36,11 +36,11 @@
     </header>
     <div id="mobile_nav">
         <nav>
-            <a href="#">О нас</a>
-            <a href="#">Продукты и услуги</a>
-            <a href="#">Нефтебаза</a>
-            <a href="#">Контакты</a>
-            <a href="#">Поставки</a>
+            <a href="/" class="active_button">О нас</a>
+            <a href="/products.html">Продукты и услуги</a>
+            <a href="/oildepot.html">Нефтебаза</a>
+            <a href="/contacts.html">Контакты</a>
+            <a href="/oildepot.html">Крупный опт</a>
         </nav>
     </div>
     <main>
@@ -253,32 +253,6 @@
     </footer>
 
 </body>
-<script>
-    function registerHideFunction(hidingElement, notHidingElements, element, hideFunction) {
-        hidingElement.addEventListener('click', function () {
-            if (element.getAttribute('data-is-clicked') != '') {
-                hideFunction();
-            }
-
-            else {
-                element.removeAttribute('data-is-clicked');
-            }
-        });
-
-        notHidingElements.forEach(elem => {
-            elem.addEventListener('click', function () {
-                element.setAttribute('data-is-clicked', '');
-            });
-        });
-
-        element.addEventListener('click', function () {
-            element.setAttribute('data-is-clicked', '');
-        });
-    }
-
-    registerHideFunction(document.getElementById('mobile_nav'), [document.getElementById('mobile_nav')], document.querySelector('#mobile_nav nav'), function () {
-        document.getElementById('mobile_nav').style.display = null;
-    });
-</script>
+<script type="text/javascript" src="/js/base.js"></script>
 
 </html>

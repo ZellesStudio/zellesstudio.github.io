@@ -26,8 +26,8 @@
             <a href="/">О нас</a>
             <a href="/products.html" class="active_button">Продукты и услуги</a>
             <a href="/oildepot.html">Нефтебаза</a>
-            <a href="#">Контакты</a>
-            <a href="#">Поставки</a>
+            <a href="/contacts.html">Контакты</a>
+            <a href="/oildepot.html">Крупный опт</a>
         </nav>
         <div id="header_contacts">
             <span>+7 965 135 4423</span>
@@ -36,11 +36,11 @@
     </header>
     <div id="mobile_nav">
         <nav>
-            <a href="#">О нас</a>
-            <a href="#">Продукты и услуги</a>
-            <a href="#">Нефтебаза</a>
-            <a href="#">Контакты</a>
-            <a href="#">Поставки</a>
+            <a href="/">О нас</a>
+            <a href="/products.html" class="active_button">Продукты и услуги</a>
+            <a href="/oildepot.html">Нефтебаза</a>
+            <a href="/contacts.html">Контакты</a>
+            <a href="/oildepot.html">Крупный опт</a>
         </nav>
     </div>
     <main>
@@ -50,15 +50,17 @@
                 <h2>Примечание: Ж/Д перевозки доступны от 60 тонн для бензина<br />и от 65 тонн для
                     дизеля.<br /><br />Самовывоз автотранспортом доступен от 5 тонн.</h2>
                 <div class="buttons">
-                    <button onclick="switchTansport('roadTransport')"
-                        class="selected_button" id="select_button_roadTransport"><span>Автотранспорт</span></button>
-                    <button onclick="switchTansport('railwayTransport')" id="select_button_railwayTransport"><span>Ж/Д</span></button>
+                    <button onclick="switchTansport('roadTransport')" class="selected_button"
+                        id="select_button_roadTransport"><span>Автотранспорт</span></button>
+                    <button onclick="switchTansport('railwayTransport')"
+                        id="select_button_railwayTransport"><span>Ж/Д</span></button>
                 </div>
             </div>
             <div id="fuel_select">
                 <h1>Выберите топливо</h1>
                 <div class="buttons">
-                    <button onclick="switchFuel('petrol')" class="selected_button" id="select_button_petrol"><span>Бензин</span></button>
+                    <button onclick="switchFuel('petrol')" class="selected_button"
+                        id="select_button_petrol"><span>Бензин</span></button>
                     <button onclick="switchFuel('disel')" id="select_button_disel"><span>Дизель</span></button>
                 </div>
             </div>
@@ -210,33 +212,7 @@
     </footer>
 
 </body>
-<script type="text/javascript" src="/js/products.js">
-    function registerHideFunction(hidingElement, notHidingElements, element, hideFunction) {
-        hidingElement.addEventListener('click', function () {
-            if (element.getAttribute('data-is-clicked') != '') {
-                hideFunction();
-            }
-
-            else {
-                element.removeAttribute('data-is-clicked');
-            }
-        });
-
-        notHidingElements.forEach(elem => {
-            elem.addEventListener('click', function () {
-                element.setAttribute('data-is-clicked', '');
-            });
-        });
-
-        element.addEventListener('click', function () {
-            element.setAttribute('data-is-clicked', '');
-        });
-    }
-
-    registerHideFunction(document.getElementById('mobile_nav'), [document.getElementById('mobile_nav')], document.querySelector('#mobile_nav nav'), function () {
-        document.getElementById('mobile_nav').style.display = null;
-    });
-</script>
+<script type="text/javascript" src="/js/base.js"></script>
 <script type="text/javascript" src="/js/products.js"></script>
 
 </html>
