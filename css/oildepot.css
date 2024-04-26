@@ -16,6 +16,8 @@ main {
     padding-left: 4.6354em;
     padding-right: 4.6354em;
     border-radius: 1.6667em;
+    position: relative;
+    z-index: 3;
 }
 
 .info_block_title {
@@ -48,6 +50,13 @@ main {
     font-weight: 600;
     color: #000000;
     line-height: 150%;
+}
+
+.absolute_image {
+    position: absolute;
+    z-index: 1;
+    width: 10vw;
+    opacity: 0.7;
 }
 
 @media (min-aspect-ratio: 147/70) {
