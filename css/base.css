@@ -1,8 +1,12 @@
-@font-face {
+/* @font-face {
     font-family: Montserrat;
     src: url(/assets/fonts/montserrat.woff);
     src: local(montserrat), url(/assets/fonts/montserrat.ttf), url(/assets/fonts/montserrat.svg);
 }
+ */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -18,21 +22,25 @@ body {
 
 h1 {
     font-size: 2vw;
-    margin-top: 3.4vw;
-    margin-bottom: 3.4vw;
-    font-weight: 900;
+    margin-top: 1.7em;
+    margin-bottom: 1.7em;
+    font-weight: 600;
 }
 
 h2 {
-    font-size: 1.1vw;
-    margin-top: 2.5vw;
-    margin-bottom: 2.5vw;
+    font-size: 1.3vw;
+    margin-top: 1.3em;
+    margin-bottom: 1.3em;
     font-weight: 600;
     line-height: 150%;
 }
 
-h2 strong {
-    font-weight: 700;
+h3 {
+    font-size: 1.1vw;
+    margin-top: 1.54em;
+    margin-bottom: 1.54em;
+    font-weight: 500;
+    line-height: 150%;
 }
 
 .header_size {
@@ -336,29 +344,29 @@ footer nav ul {
 
     h1 {
         font-size: 4vh;
-        margin-top: 4.8vh;
-        margin-bottom: 4.8vh;
     }
-    
+
     h2 {
-        font-size: 2.2vh;
-        margin-top: 5vh;
-        margin-bottom: 5vh;
+        font-size: 2.6vh;
     }
-    
+
+    h3 {
+        font-size: 2.2vh;
+    }
+
 }
 
 @media (max-aspect-ratio: 93/88) {
     h1 {
         font-size: 5.5vw;
-        margin-top: 5vw;
-        margin-bottom: 5vw;
     }
 
     h2 {
+        font-size: 3vw;
+    }
+
+    h3 {
         font-size: 2.7vw;
-        margin-top: 4vw;
-        margin-bottom: 4vw;
     }
 
     .header_size {
