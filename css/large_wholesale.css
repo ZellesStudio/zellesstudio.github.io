@@ -1,0 +1,144 @@
+#wrapper {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3.3333vw;
+    margin-bottom: 3.3333vw;
+    gap: 3.3333vw;
+}
+
+.text_container {
+    font-size: 1vw;
+    width: 55em;
+    padding-left: 4.5em;
+    padding-right: 4.5em;
+    padding-top: 3.4em;
+    padding-bottom: 3.4em;
+    background: #fff;
+    box-shadow: 0px 5px 28px rgba(0, 0, 0, 0.08);
+    border-radius: 1.6667em;
+}
+
+.text_container h1 {
+    margin-top: 0;
+    color: #74472C;
+}
+
+.paragraph {
+    font-weight: 500;
+    font-size: 1.1vw;
+    line-height: 150%;
+    margin-bottom: 1em;
+}
+
+.text_container li {
+    font-weight: 500;
+    font-size: 1.1vw;
+    line-height: 150%;
+    margin-left: 0.55em;
+}
+
+#min_volume h1 {
+    color: #000;
+    margin-bottom: 0.5em;
+}
+
+#min_volume h1 span {
+    font-size: 0.55em;
+}
+
+#info_block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70vw;
+    align-items: center;
+    justify-content: center;
+}
+
+.info_part {
+    font-size: 1vw;
+    margin: 1.0938em;
+    background: #fff;
+    box-shadow: 0px 5px 28px rgba(0, 0, 0, 0.08);
+    border-radius: 0.7292em;
+    width: 32.2396em;
+    height: 7.2917em;
+    display: flex;
+    padding-left: 1.875em;
+    padding-right: 1.875em;
+    flex-direction: row;
+    align-items: center;
+}
+
+.info_part span {
+    font-weight: 500;
+    font-size: 1.1458em;
+}
+
+.info_part svg {
+    width: 2.5em;
+    min-width: 2.5em;
+    margin-right: 1.3em;
+}
+
+@media (min-aspect-ratio: 147/70) {
+    #wrapper {
+        margin-top: 6.66vh;
+        margin-bottom: 6.66vh;
+        gap: 6.66vh;
+    }
+
+    .text_container {
+        font-size: 2vh;
+    }
+
+    .paragraph {
+        font-size: 2.2vh;
+    }
+
+    .text_container li {
+        font-size: 2.2vh;
+    }
+
+    #info_block {
+        width: 140vh;
+    }
+
+    .info_part {
+        font-size: 2vh;
+    }
+}
+
+@media (max-aspect-ratio: 93/88){
+    .text_container {
+        width: 90vw;
+    }
+
+    .paragraph {
+        font-size: 3.3vw;
+    }
+    
+    .text_container li {
+        font-size: 3.3vw;
+        margin-left: 2em;
+    }
+
+    .text_container h1 {
+        margin-bottom: 0.7em;
+    }
+
+    #info_block {
+        flex-direction: column;
+        width: 90vw;
+    }
+
+    .info_part {
+        font-size: 2.7vw;
+        margin: 1.66vw;
+        margin-left: 0;
+        margin-right: 0;
+        width: 90vw;
+    }
+}
