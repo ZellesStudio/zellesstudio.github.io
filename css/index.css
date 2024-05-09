@@ -11,8 +11,8 @@ main section {
 }
 
 #main_section {
-    min-height: 100vh;
-    max-height: 100vh;
+    min-height: 110vh;
+    max-height: 110vh;
 }
 
 .bg_img {
@@ -80,7 +80,7 @@ main section {
 }
 
 #main_section_fetures {
-    height: 7.7vw;
+    height: 12vw;
     width: 100vw;
     background-color: #23211F;
     display: flex;
@@ -89,7 +89,7 @@ main section {
     padding-left: 14vw;
     padding-right: 14vw; */
     justify-content: center;
-    gap: 2.64vw;
+    gap: 1.5vw;
 }
 
 .fetaure {
@@ -97,7 +97,19 @@ main section {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 15vw;
+    width: 16vw;
+}
+
+#fetaure_1 span {
+    width: 12vw;
+}
+
+#fetaure_2 span {
+    width: 10vw;
+}
+
+#fetaure_3 span {
+    width: 12vw;
 }
 
 .fetaure svg {
@@ -127,7 +139,7 @@ main section {
 
 .stat {
     width: 60vw;
-    height: 31vw;
+    min-height: 31vw;
     border-radius: 1.6667vw;
     background-color: #fff;
     display: flex;
@@ -136,6 +148,8 @@ main section {
     align-items: center;
     padding-left: 4vw;
     padding-right: 4vw;
+    padding-top: 2vw;
+    padding-bottom: 2vw
 }
 
 .stat_num {
@@ -227,7 +241,19 @@ main section {
     }
 
     .fetaure {
-        width: 25vh;
+        width: 32vh;
+    }
+
+    #fetaure_1 span {
+        width: 24vh;
+    }
+
+    #fetaure_2 span {
+        width: 20vh;
+    }
+
+    #fetaure_3 span {
+        width: 24vh;
     }
 
     .fetaure svg {
@@ -248,10 +274,12 @@ main section {
 
     .stat {
         width: 100vh;
-        height: 52vh;
+        min-height: 52vh;
         border-radius: 2.78vh;
         padding-left: 6.67vh;
         padding-right: 6.67vh;
+        padding-top: 3.3vh;
+        padding-right: 3.3vh;
     }
 
     .stat_num {
@@ -288,6 +316,10 @@ main section {
 }
 
 @media (max-aspect-ratio: 93/88) {
+    #fetaure_1 span, #fetaure_2 span, #fetaure_3 span {
+        width: auto;
+    }
+
     .bg_img {
         display: none;
     }
@@ -367,8 +399,6 @@ main section {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding-left: 4vw;
-        padding-right: 4vw;
         padding-top: 4vw;
         padding-bottom: 4vw;
     }
@@ -394,5 +424,5 @@ main section {
         width: 60vw;
         min-height: 0;
         order: 1;
-    }  
+    }
 }
