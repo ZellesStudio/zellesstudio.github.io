@@ -259,6 +259,11 @@ footer nav ul {
     line-height: 200%;
 }
 
+footer nav li a {
+    color: #fff;
+    text-decoration: none;
+}
+
 @media (min-aspect-ratio: 147/70) {
     .header_size {
         height: 10vh;
